@@ -7,9 +7,6 @@ import Services from "./components/pages/Services";
 import Product from "./components/pages/Product";
 import SignUp from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
-// import Dashboard1 from "./components/pages/dashboard/admin";
-// import Dashboard2 from "./components/pages/dashboard/superadmin";
-// import Dashboard3 from "./components/pages/dashboard/walimurid";
 import NavbarDashboard from "./components/pages/dashboard/navbar/NavbarDashboard";
 
 function App() {
@@ -40,7 +37,7 @@ function App() {
         <Route path="/superadmin/*" element={<SuperAdminDashboard />} />
 
         {/* Walimurid Routes */}
-        <Route path="/walimurid/*" element={<WalimuridDashboard />} />
+        <Route path="/walimurid/*" element={<WaliMuridDashboard />} />
       </Routes>
     </Router>
   );
@@ -49,7 +46,7 @@ function App() {
 function AdminDashboard() {
   return (
     <>
-      <NavbarDashboard />
+      <NavbarDashboard role="admin" />
     </>
   );
 }
@@ -57,15 +54,15 @@ function AdminDashboard() {
 function SuperAdminDashboard() {
   return (
     <>
-      <NavbarDashboard />
+      <NavbarDashboard role="superadmin" />
     </>
   );
 }
 
-function WalimuridDashboard() {
+function WaliMuridDashboard() {
   return (
     <>
-      <NavbarDashboard />
+      <NavbarDashboard role="walimurid" />
     </>
   );
 }

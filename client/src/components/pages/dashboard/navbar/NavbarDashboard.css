@@ -9,6 +9,8 @@
 
 .sidebar {
   color: #fff;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .logo {
@@ -41,6 +43,15 @@
 }
 
 .toogle-theme-btn {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-button {
   position: absolute;
   bottom: 30px;
   left: 20px;
