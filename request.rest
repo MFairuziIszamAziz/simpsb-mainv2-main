@@ -1,0 +1,28 @@
+GET  http://localhost:3000/users
+
+
+###
+GET http://localhost:3000/users/659172ae695f76874bc5a272
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name" : "Navia",
+    "email": "Nemail@gmail.com",
+    "nohp" : "081243567687"
+}
+
+###
+PATCH http://localhost:3000/users/659175289c6449596d0d7b0e
+Content-Type: application/json
+
+{
+    "name" : "Selinta",
+    "email": "Semail@gmail.com",
+    "nohp" : "081243567689"
+}
+
+###
+DELETE http://localhost:3000/users/659175e273042d2e15559bf6
