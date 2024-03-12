@@ -8,6 +8,7 @@ import Product from "./components/pages/Product";
 import SignUp from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
 import NavbarDashboard from "./components/pages/dashboard/navbar/NavbarDashboard";
+//
 
 function App() {
   return (
@@ -29,14 +30,8 @@ function App() {
             </>
           }
         />
-
-        {/* Admin Routes */}
         <Route path="/admin/*" element={<AdminDashboard />} />
-
-        {/* Superadmin Routes */}
         <Route path="/superadmin/*" element={<SuperAdminDashboard />} />
-
-        {/* Walimurid Routes */}
         <Route path="/walimurid/*" element={<WaliMuridDashboard />} />
       </Routes>
     </Router>
